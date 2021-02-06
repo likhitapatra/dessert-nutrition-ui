@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../../components/Layout/Layout';
-import { ErrorMessage, Field, FormikProvider, useFormik } from 'formik';
+import { Field, FormikProvider, useFormik } from 'formik';
 import * as yup from 'yup';
-import PropTypes from 'prop-types';
 import Button from '../../components/Button/Button';
-import { ADD_NUTRITION_DATA } from '../../queries/queries';
+import { ADD_NUTRITION_DATA, GET_NUTRITION_DATA } from '../../queries/queries';
 import { useMutation } from '@apollo/client';
 import { useHistory } from 'react-router-dom';
+import Error from '../../components/Error/Error';
 
 const validationSchema = yup.object({
   dessert: yup.string().required('Required'),
@@ -15,12 +15,6 @@ const validationSchema = yup.object({
   carb: yup.number().required('Required'),
   protein: yup.number().required('Required'),
 });
-
-const Error = ({ name }: any) => (
-  <div className="pt2 red">
-    <ErrorMessage name={name} />
-  </div>
-);
 
 const FormField = ({ label, name, type }: any) => (
   <div className="pt2">
@@ -33,13 +27,15 @@ const FormField = ({ label, name, type }: any) => (
   </div>
 );
 
-Error.propTypes = {
-  name: PropTypes.string,
-};
-
 const AddData = () => {
   const history = useHistory();
-  const [addNutritionData] = useMutation(ADD_NUTRITION_DATA);
+  const [addNutritionData] = useMutation(ADD_NUTRITION_DATA, {
+    refetchQueries: [
+      {
+        query: GET_NUTRITION_DATA,
+      },
+    ],
+  });
 
   const formik = useFormik({
     initialValues: {
@@ -51,8 +47,6 @@ const AddData = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values, { resetForm }) => {
-      console.log('values', values);
-      console.log('formik', formik);
       addNutritionData({
         variables: values,
       });

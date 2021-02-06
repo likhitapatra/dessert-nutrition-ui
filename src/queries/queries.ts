@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-export const GET_NUTRITION_DATA = gql`
+export const GET_NUTRITION_DATA: any = gql`
   query {
     nutritionData {
       dessert

@@ -6,7 +6,10 @@ import Button from '../Button/Button';
 import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
 import './Table.css';
 import { useMutation } from '@apollo/client';
-import { DELETE_NUTRITION_DATA } from '../../queries/queries';
+import {
+  DELETE_NUTRITION_DATA,
+  GET_NUTRITION_DATA,
+} from '../../queries/queries';
 
 const Table = (props: any) => {
   const history = useHistory();
@@ -47,6 +50,7 @@ const Table = (props: any) => {
   const handleDeleteSelected = () => {
     deleteNutritionData({
       variables: { dessert: selectedDessert },
+      refetchQueries: [{ query: GET_NUTRITION_DATA }],
     });
   };
 
