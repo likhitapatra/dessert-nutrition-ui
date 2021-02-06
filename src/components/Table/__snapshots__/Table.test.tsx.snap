@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should match Table snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="container"
+        >
+          <div
+            class="selection"
+          >
+            0
+             Selected
+          </div>
+          <div
+            class="button-container"
+          >
+            <div
+              class="ph2"
+            >
+              <button
+                class="f6 link dim br1 ph3 pv2 mb2 dib white bg-dark-green w-undefined"
+              >
+                + Add New
+              </button>
+            </div>
+            <button
+              class="f6 link dim br1 ph3 pv2 mb2 dib white bg-dark-red w-undefined"
+            >
+              - Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="pa4"
+        >
+          <div
+            class="overflow-auto"
+          >
+            <table
+              cellspacing="0"
+              class="f6 w-100 mw12 center"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                    <input
+                      id="desserts"
+                      name="desserts"
+                      type="checkbox"
+                    />
+                  </th>
+                  <th
+                    class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                    Dessert (100g serving)
+                  </th>
+                  <th
+                    class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                    Calories
+                  </th>
+                  <th
+                    class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                    Fat (g)
+                  </th>
+                  <th
+                    class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                    Carbs (g)
+                  </th>
+                  <th
+                    class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                    Protein (g)
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="lh-copy"
+              />
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="container"
+      >
+        <div
+          class="selection"
+        >
+          0
+           Selected
+        </div>
+        <div
+          class="button-container"
+        >
+          <div
+            class="ph2"
+          >
+            <button
+              class="f6 link dim br1 ph3 pv2 mb2 dib white bg-dark-green w-undefined"
+            >
+              + Add New
+            </button>
+          </div>
+          <button
+            class="f6 link dim br1 ph3 pv2 mb2 dib white bg-dark-red w-undefined"
+          >
+            - Delete
+          </button>
+        </div>
+      </div>
+      <div
+        class="pa4"
+      >
+        <div
+          class="overflow-auto"
+        >
+          <table
+            cellspacing="0"
+            class="f6 w-100 mw12 center"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                >
+                  <svg
+                    baseProfile="tiny"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    version="1.2"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                    />
+                  </svg>
+                  <input
+                    id="desserts"
+                    name="desserts"
+                    type="checkbox"
+                  />
+                </th>
+                <th
+                  class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                >
+                  <svg
+                    baseProfile="tiny"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    version="1.2"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                    />
+                  </svg>
+                  Dessert (100g serving)
+                </th>
+                <th
+                  class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                >
+                  <svg
+                    baseProfile="tiny"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    version="1.2"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                    />
+                  </svg>
+                  Calories
+                </th>
+                <th
+                  class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                >
+                  <svg
+                    baseProfile="tiny"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    version="1.2"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                    />
+                  </svg>
+                  Fat (g)
+                </th>
+                <th
+                  class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                >
+                  <svg
+                    baseProfile="tiny"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    version="1.2"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                    />
+                  </svg>
+                  Carbs (g)
+                </th>
+                <th
+                  class="fw6 bb b--black-20 tl pb3 pr3 bg-white"
+                >
+                  <svg
+                    baseProfile="tiny"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    version="1.2"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                    />
+                  </svg>
+                  Protein (g)
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="lh-copy"
+            />
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
