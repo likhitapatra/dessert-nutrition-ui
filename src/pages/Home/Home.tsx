@@ -4,9 +4,11 @@ import Table from '../../components/Table/Table';
 import Layout from '../../components/Layout/Layout';
 import { useQuery } from '@apollo/client';
 import { GET_NUTRITION_DATA } from '../../queries/queries';
+import { initialState } from './mockData';
 
 const Home = () => {
-  const [state, setState] = useState({});
+  const [state, setState]: any = useState({});
+
   const { loading, data } = useQuery(GET_NUTRITION_DATA, {
     fetchPolicy: 'cache-and-network',
   });
@@ -17,7 +19,10 @@ const Home = () => {
     }
   }, [data]);
 
-  const handleReset = () => {};
+  const handleReset = () => {
+    setState(initialState);
+  };
+
   return (
     <Layout>
       <div className="app-container">
