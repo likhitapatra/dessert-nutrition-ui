@@ -6,9 +6,16 @@ import { useQuery } from '@apollo/client';
 import { GET_NUTRITION_DATA } from '../../queries/queries';
 
 const Home = () => {
+  const [state, setState] = useState({});
   const { loading, data } = useQuery(GET_NUTRITION_DATA, {
     fetchPolicy: 'cache-and-network',
   });
+
+  useEffect(() => {
+    if (data) {
+      setState(data);
+    }
+  }, [data]);
 
   const handleReset = () => {};
   return (
@@ -23,7 +30,7 @@ const Home = () => {
           </Button>
         </div>
       </div>
-      {loading ? 'Loading...' : <Table data={data} />}
+      {loading ? 'Loading...' : <Table data={state} />}
     </Layout>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import TableData from '../TableData/TableData';
 import TableHeader from '../TableHeader/TableHeader';
@@ -14,32 +14,36 @@ import {
 const Table = (props: any) => {
   const history = useHistory();
   const [toggle, setToggle] = useState(false);
+  const [state, setState]: any = useState([]);
 
-  const [state, setState] = useState(props.data.nutritionData);
+  useEffect(() => {
+    setState(props.data?.nutritionData);
+  }, [props]);
 
   const [checked, setChecked] = useState(
-    [...Array(props.data?.nutritionData.length)].map(() => false)
+    [...Array(props.data?.nutritionData?.length)].map(() => false)
   );
+
   const [allChecked, setAllChecked] = useState(false);
   const [selectedCount, setSelectedCount] = useState(0);
   const [selectedDessert, setSelectedDessert] = useState('');
   const [deleteNutritionData] = useMutation(DELETE_NUTRITION_DATA);
 
   const handleSelected = (event: any, currentIndex: any) => {
-    const _checked = [...checked];
+    const _checked: any = [...checked];
     _checked[currentIndex] = event.target.checked;
     setChecked(_checked);
     event.target.checked
       ? setSelectedDessert(props.data.nutritionData[currentIndex].dessert)
       : setSelectedDessert('');
 
-    const checkedCount = _checked.filter((val) => val === true).length;
+    const checkedCount = _checked.filter((val: any) => val === true).length;
     setSelectedCount(checkedCount);
   };
 
   const handleSelectAll = (event: any) => {
     setAllChecked(event.target.checked);
-    setChecked((checked) => checked.map(() => event.target.checked));
+    setChecked((checked: any) => checked.map(() => event.target.checked));
     !allChecked ? setSelectedCount(checked.length) : setSelectedCount(0);
   };
 
@@ -127,24 +131,25 @@ const Table = (props: any) => {
               </tr>
             </thead>
             <tbody className="lh-copy">
-              {state.map((values: any, index: string) => (
-                <tr key={index}>
-                  <TableData>
-                    <input
-                      type="checkbox"
-                      checked={checked[parseInt(index)]}
-                      onChange={(event) =>
-                        handleSelected(event, parseInt(index))
-                      }
-                    />
-                  </TableData>
-                  <TableData>{values.dessert}</TableData>
-                  <TableData>{values.nutritionInfo.calories}</TableData>
-                  <TableData>{values.nutritionInfo.fat}</TableData>
-                  <TableData>{values.nutritionInfo.carb}</TableData>
-                  <TableData>{values.nutritionInfo.protein}</TableData>
-                </tr>
-              ))}
+              {state &&
+                state.map((values: any, index: string) => (
+                  <tr key={index}>
+                    <TableData>
+                      <input
+                        type="checkbox"
+                        checked={checked[parseInt(index)]}
+                        onChange={(event) =>
+                          handleSelected(event, parseInt(index))
+                        }
+                      />
+                    </TableData>
+                    <TableData>{values.dessert}</TableData>
+                    <TableData>{values.nutritionInfo.calories}</TableData>
+                    <TableData>{values.nutritionInfo.fat}</TableData>
+                    <TableData>{values.nutritionInfo.carb}</TableData>
+                    <TableData>{values.nutritionInfo.protein}</TableData>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>
